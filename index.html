@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>YARDS | Premium Fashion</title>
+
+  <meta
+    name="description"
+    content="Discover premium men's and women's fashion, streetwear, casual outfits and new arrivals at YARDS."
+  >
+
+  <meta name="theme-color" content="#f5f3ee">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <!-- Premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+  <!-- ANNOUNCEMENT BAR -->
+  <div class="announcement-bar">
+    FREE SHIPPING ON ORDERS OVER ₹2,999
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <a href="#home" class="logo" aria-label="YARDS home">
+      YARDS<span>.</span>
+    </a>
+
+    <button
+      type="button"
+      class="menu-toggle"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#men-products">Men</a>
+      <a href="#women-products">Women</a>
+      <a href="#fitting-room">3D Fitting Room</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button
+        type="button"
+        class="search-toggle"
+        aria-label="Open search"
+        aria-expanded="false"
+      >
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <button
+        type="button"
+        class="cart-toggle"
+        aria-label="Open shopping cart"
+      >
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count">0</span>
+      </button>
+
+    </div>
+
+  </header>
+
+  <!-- SEARCH PANEL -->
+  <section class="search-panel" id="search-panel" hidden>
+    <form id="search-form">
+
+      <input
+        type="search"
+        id="search-input"
+        placeholder="Search clothing..."
+        aria-label="Search clothing"
+      >
+
+      <button type="submit">
+        Search
+      </button>
+
+    </form>
+  </section>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+
+        <p class="eyebrow">
+          THE NEW FASHION EXPERIENCE
+        </p>
+
+        <h1>
+          WEAR YOUR<br>
+          <span>OWN STORY.</span>
+        </h1>
+
+        <p class="hero-description">
+          Discover modern essentials, timeless outfits,
+          and premium fashion made for your style.
+        </p>
+
+        <div class="hero-buttons">
+
+          <a href="#men-products" class="btn btn-primary">
+            Shop Men
+          </a>
+
+          <a href="#women-products" class="btn btn-secondary">
+            Shop Women
+          </a>
+
+        </div>
+
+      </div>
+
+      <a href="#collections" class="hero-scroll">
+        DISCOVER YARDS
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+
+    </section>
+
+    <!-- COLLECTIONS SECTION -->
+    <section
+      class="categories section-padding"
+      id="collections"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          FIND YOUR STYLE
+        </p>
+
+        <h2>
+          Explore Collections
+        </h2>
+
+        <p>
+          Discover your next favourite look from YARDS.
+        </p>
+
+      </div>
+
+      <div class="category-grid">
+
+        <!-- MEN'S COLLECTION -->
+        <a
+          href="#men-products"
+          class="category-card"
+          aria-label="Explore Men's Collection"
+        >
+
+          <div
+            class="category-image category-men"
+            aria-hidden="true"
+          ></div>
+
+          <div class="category-content">
+
+            <p class="category-label">
+              EVERYDAY ESSENTIALS
+            </p>
+
+            <h3>
+              Men's Collection
+            </h3>
+
+            <span>
+              Explore Collection
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- WOMEN'S COLLECTION -->
+        <a
+          href="#women-products"
+          class="category-card"
+          aria-label="Explore Women's Collection"
+        >
+
+          <div
+            class="category-image category-women"
+            aria-hidden="true"
+          ></div>
+
+          <div class="category-content">
+
+            <p class="category-label">
+              MODERN FEMININE STYLE
+            </p>
+
+            <h3>
+              Women's Collection
+            </h3>
+
+            <span>
+              Explore Collection
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- STREETWEAR -->
+        <a
+          href="#men-products"
+          class="category-card"
+          aria-label="Explore Streetwear"
+        >
+
+          <div
+            class="category-image category-streetwear"
+            aria-hidden="true"
+          ></div>
+
+          <div class="category-content">
+
+            <p class="category-label">
+              EXPRESS YOURSELF
+            </p>
+
+            <h3>
+              Streetwear
+            </h3>
+
+            <span>
+              Explore Collection
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- PREMIUM WEAR -->
+        <a
+          href="#men-products"
+          class="category-card"
+          aria-label="Explore Premium Wear"
+        >
+
+          <div
+            class="category-image category-premium"
+            aria-hidden="true"
+          ></div>
+
+          <div class="category-content">
+
+            <p class="category-label">
+              MADE TO STAND OUT
+            </p>
+
+            <h3>
+              Premium Wear
+            </h3>
+
+            <span>
+              Explore Collection
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- CASUAL WEAR -->
+        <a
+          href="#men-products"
+          class="category-card"
+          aria-label="Explore Casual Wear"
+        >
+
+          <div
+            class="category-image category-casual"
+            aria-hidden="true"
+          ></div>
+
+          <div class="category-content">
+
+            <p class="category-label">
+              COMFORT MEETS STYLE
+            </p>
+
+            <h3>
+              Casual Wear
+            </h3>
+
+            <span>
+              Explore Collection
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </div>
+
+        </a>
+
+        <!-- NEW ARRIVALS -->
+        <a
+          href="#men-products"
+          class="category-card"
+          aria-label="Explore New Arrivals"
+        >
+
+          <div
+            class="category-image category-new"
+            aria-hidden="true"
+          ></div>
+
+          <div class="category-content">
+
+            <p class="category-label">
+              JUST ARRIVED
+            </p>
+
+            <h3>
+              New Arrivals
+            </h3>
+
+            <span>
+              Explore Collection
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+    <!-- 3D FITTING ROOM -->
+    <section
+      class="fitting-room section-padding"
+      id="fitting-room"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          EXPERIENCE FASHION IN 3D
+        </p>
+
+        <h2>
+          Your Style, Every Angle.
+        </h2>
+
+        <p>
+          Explore our interactive 3D model.
+          Drag to rotate and use the controls to zoom.
+        </p>
+
+      </div>
+
+      <!-- Three.js creates the 3D canvas inside this container -->
+      <div class="model-viewer" id="model-viewer">
+
+        <!-- 3D CONTROLS -->
+        <div class="model-controls">
+
+          <button
+            type="button"
+            data-action="zoom-out"
+            aria-label="Zoom out"
+          >
+            − Zoom out
+          </button>
+
+          <span class="model-hint">
+            DRAG TO ROTATE 360°
+          </span>
+
+          <button
+            type="button"
+            data-action="zoom-in"
+            aria-label="Zoom in"
+          >
+            + Zoom in
+          </button>
+
+          <button
+            type="button"
+            data-action="reset-model"
+            aria-label="Reset 3D model"
+          >
+            Reset
+          </button>
+
+        </div>
+
+      </div>
+
+      <p class="fitting-room-note">
+        INTERACTIVE 3D PREVIEW · MORE STYLES COMING SOON
+      </p>
+
+    </section>
+
+    <!-- MEN'S PRODUCTS -->
+    <section
+      class="products-section section-padding"
+      id="men"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          MADE FOR EVERYDAY
+        </p>
+
+        <h2>
+          Men's Collection
+        </h2>
+
+      </div>
+
+      <div
+        class="product-grid"
+        id="men-products"
+      >
+        <!-- Products are rendered by script.js -->
+      </div>
+
+    </section>
+
+    <!-- WOMEN'S PRODUCTS -->
+    <section
+      class="products-section section-padding"
+      id="women"
+    >
+
+      <div class="section-heading">
+
+        <p class="eyebrow">
+          STYLE WITHOUT LIMITS
+        </p>
+
+        <h2>
+          Women's Collection
+        </h2>
+
+      </div>
+
+      <div
+        class="product-grid"
+        id="women-products"
+      >
+        <!-- Products are rendered by script.js -->
+      </div>
+
+    </section>
+
+    <!-- BRAND STATEMENT -->
+    <section class="brand-statement section-padding">
+
+      <p class="eyebrow">
+        THE YARDS PHILOSOPHY
+      </p>
+
+      <h2>
+        Less ordinary.<br>
+        <span>More you.</span>
+      </h2>
+
+      <p>
+        Fashion is more than what you wear.
+        It's how you express yourself.
+      </p>
+
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter section-padding">
+
+      <p class="eyebrow">
+        STAY IN THE LOOP
+      </p>
+
+      <h2>
+        Get the latest from YARDS.
+      </h2>
+
+      <p>
+        Be the first to discover new collections and styles.
+      </p>
+
+      <form id="newsletter-form">
+
+        <input
+          type="email"
+          id="newsletter-email"
+          placeholder="Enter your email address"
+          aria-label="Email address"
+          required
+        >
+
+        <button type="submit">
+          Join Us
+        </button>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+
+    <a href="#home" class="logo">
+      YARDS<span>.</span>
+    </a>
+
+    <p>
+      Premium style. Your identity.
+    </p>
+
+    <div class="footer-links">
+
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#men-products">Men</a>
+      <a href="#women-products">Women</a>
+      <a href="#fitting-room">3D Fitting Room</a>
+
+    </div>
+
+    <p class="copyright">
+      © 2026 YARDS. All rights reserved.
+    </p>
+
+  </footer>
+
+  <!-- PAGE OVERLAY -->
+  <div class="overlay" id="overlay"></div>
+
+  <!-- SHOPPING CART -->
+  <aside
+    class="cart-drawer"
+    id="cart-drawer"
+    aria-label="Shopping cart"
+    aria-hidden="true"
+  >
+
+    <div class="cart-header">
+
+      <h2>
+        Your Bag
+      </h2>
+
+      <button
+        type="button"
+        data-action="close-cart"
+        aria-label="Close shopping cart"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+    </div>
+
+    <div
+      class="cart-items"
+      id="cart-items"
+    >
+      <!-- Cart items appear here -->
+    </div>
+
+    <div class="cart-footer">
+
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cart-total">₹0</strong>
+      </div>
+
+      <button
+        type="button"
+        class="btn btn-primary checkout-button"
+      >
+        Continue to Checkout
+      </button>
+
+      <p class="cart-demo-note">
+        Demo store: checkout is not connected to a payment gateway.
+      </p>
+
+    </div>
+
+  </aside>
+
+  <!-- PRODUCT DETAILS MODAL -->
+  <div
+    class="product-modal"
+    id="product-modal"
+    hidden
+  >
+
+    <div class="product-modal-content">
+
+      <button
+        type="button"
+        class="product-modal-close"
+        data-action="close-modal"
+        aria-label="Close product details"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div id="product-modal-body">
+        <!-- Product details appear here -->
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- PRODUCT DATA MUST LOAD FIRST -->
+  <script src="products.js"></script>
+
+  <!-- WEBSITE INTERACTIONS -->
+  <script src="script.js"></script>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  }
+}
+</script>
+
+
+  <!-- THREE.JS FITTING ROOM -->
+  <script type="module" src="three-scene.js"></script>
+
+
+</body>
+</html>
